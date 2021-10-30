@@ -1,0 +1,51 @@
+@import "global";
+
+footer {
+  background: $navbarBg_light;
+  transition: 0.25s ease-out;
+  padding: 10px 0 1px 0;
+  text-align: center;
+
+  .logo {
+
+    img {
+      width: 50px;
+    }
+  }
+
+  .navlinks {
+    ul {
+      list-style: none;
+
+      li {
+        display: inline-block;
+        margin: 0 10px;
+
+        &.switch-theme {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .f-d{
+    margin-top: 15px;
+  }
+}
+
+.dark footer{
+  background: $navbarBg_dark;
+}
+
+.footerLinks{
+  margin: 0;
+}
+
+.footerLinks li{
+  margin: 5px !important;
+  padding: 0;
+}
+
+.footerLinks li a{
+  margin-top: 5px;
+}

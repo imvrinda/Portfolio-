@@ -1,0 +1,35 @@
+[
+  {
+    "title": "vrindavyas.com",
+    "subtitle": "Personal Portfolio Website",
+    "description": "<div style='margin:15px 0 14px 0'>A personal portfolio site developed using GatsbyJS, with a focus on speed and SEO.</div>",
+    "website": "https://rajrajhans.com/",
+    "github": "https://github.com/imvrinda/vrindavyas"
+  },
+  {
+    "title": "Spam Detector",
+    "subtitle": "Detection of Spam Reviews",
+    "description": "<div style='margin:15px 0 14px 0'>A data mining system that extracts features from a vast reviews.</div>",
+    "website": "https://spam-review-detector.herokuapp.com",
+    "github": "https://github.com/imvrinda/Fake-Review-Detector"
+  },
+  {
+    "title": "Amazon Clone",
+    "subtitle": "Ecommerce Web System",
+    "description": "<div style='margin:15px 0 14px 0'>E-commerce built with React.js using Firebase user authentication.</div>",
+    "website": "https://shop-by-vrinda.web.app/",
+    "github": "https://github.com/imvrinda/Amazon-Clone"
+  },
+  {
+    "title": "Covid-19 Tracker",
+    "subtitle": "Basic Covid-19 Tracker",
+    "description": "<div style='margin:15px 0 14px 0'>Build a COVID-19 Tracker with ReactJS, React Hooks and Material UI.</div>",
+    "website": "https://covid-19-tracker-by-vrinda.web.app/",
+    "github": "https://github.com/imvrinda/Covid-Tracker"
+  },
+  {
+    "title": "Government Polytechnic College Website",
+    "description": "Developed using HTML, CSS, JavaScript and Bootstrap 4 CSS Framework.",
+    "website": "https://www.gpk.edu.in"
+  }
+]

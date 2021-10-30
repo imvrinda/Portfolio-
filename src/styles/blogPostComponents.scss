@@ -1,0 +1,151 @@
+@import "global";
+
+.blogPostHeading{
+  font-family: $serifFont;
+  font-size: 28px;
+  font-weight: $serifFontWeight;
+  margin-top: 30px;
+}
+
+.blogPostHeadingLine{
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  background: $brand_dark;
+  color: $brand_dark;
+  border: none;
+  height: 1px;
+  width: 50px;
+}
+
+.blogPostSubheading{
+  font-family: $headingFont;
+  font-weight: bold;
+  font-size: 22px;
+  margin: 5px 0;
+}
+
+.blogPostSubSubheading{
+  font-family: $headingFont;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.bpstpara{
+  margin: 10px 0;
+}
+
+.bpstli{
+  margin-bottom: 2px;
+}
+
+.bpstquote{
+  width:85%;
+  margin:10px auto;
+  color: #555555;
+  padding:1em 30px 1em 65px;
+  border-left:8px solid $brand_dark ;
+  line-height:1.6;
+  position: relative;
+  background: #eeeeee75;
+  transition: all 0.25s;
+}
+
+.dark .bpstquote{
+  color: $txt_dark;
+  background: $navbarBg_dark;
+}
+
+.bpstquote::before{
+  content: "\201C";
+  font-family: $serifFont;
+  color: $brand_dark;
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+.bpstquote::after{
+  content: '';
+  content: '';
+}
+
+.bpstquote span{
+  display:block;
+  font-style: normal;
+  font-weight: bold;
+  margin-top:1em;
+  margin-left: -40px;
+}
+
+.bpstextlink{
+  width: fit-content;
+}
+
+.bpstAlert{
+  line-height: 1.5;
+  box-sizing: border-box;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border-width: 2px;
+  border-style: solid;
+  font-weight: 500;
+  margin: auto;
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 35px 1fr;
+  grid-column-gap: 1rem;
+  -webkit-box-align: center;
+  align-items: center;
+  font-size: 1rem;
+  background-color: #ebf4ff;
+  border-color: #c3dafe;
+  color: #4c51bf;
+  width: 80%;
+  transition: all 0.25s;
+
+  i{
+    margin: auto;
+  }
+}
+
+.dark .bpstAlert{
+  background-color: $navbarBg_dark;
+
+  svg{
+    fill: white;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+
+  .blogPostHeading{
+    line-height: 1.4;
+    font-size: 25px;
+  }
+
+  .blogText{
+    font-size: 16px;
+  }
+  .bpstAlert{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 13px;
+
+    svg{
+      font-size: 13px;
+      margin: auto;
+    }
+  }
+  .bpstquote{
+    width: 100%;
+    padding: 1em 30px 1em 15px;
+  }
+  .bpstquote::before{
+    top: -18px;
+  }
+  .bpstquote span{
+    margin-left: 0;
+  }
+}

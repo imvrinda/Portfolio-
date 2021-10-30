@@ -1,0 +1,260 @@
+@import "global";
+
+.aboutPageContainer h2{
+  padding: 10px 0;
+}
+
+//STYLES FOR HERO SECTION SVG START
+.AboutSVG{
+  height: 250px;
+  max-width: 500px;
+}
+
+.AboutSVG, .AboutSVGDarkFill, .AboutSVGDarkColorHair, .AboutSVGDarkColorStroke, .AboutSVGDarkColorSkin{
+  transition: all .25s ease-out;
+}
+
+.AboutSVG:hover{
+  padding: 5px;
+}
+
+.dark .AboutSVGDarkFill{
+  fill: $svg_fill_dark;
+}
+
+.dark .AboutSVGDarkColor{
+  fill: $svg_color_dark;
+}
+
+.dark .AboutSVGDarkColorStroke{
+  stroke: $svg_color_dark;
+}
+
+.dark .AboutSVGDarkColorHair{
+  fill: $svg_fill_dark;
+}
+
+.dark .AboutSVGDarkColorSkin{
+  fill: #c6a0a5;
+}
+
+// STYLES FOR ABOUT PAGE STRUCTURE
+.aboutPageContainer{
+  width: 80%;
+  margin: 45px auto 0 auto;
+}
+
+.aboutRaj{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas: "aboutRajText aboutRajPhoto";
+}
+
+.aboutRajText{
+  grid-area: aboutRajText;
+}
+
+.aboutRajPhoto{
+  grid-area: aboutRajPhoto;
+}
+
+.aboutRajPhoto img{
+  border-radius: 100%;
+  background: #ebeeff;
+  transition: all 0.25s ease-out !important;
+}
+
+.dark .aboutRajPhoto img{
+  filter: brightness(82%) contrast(110%);
+  -webkit-filter: brightness(82%) contrast(110%);
+  -moz-filter: brightness(82%) contrast(110%);
+  background: #0c171d;
+}
+
+.aboutRajPhoto img:hover{background: #3355ff5e}
+
+.dark .aboutRajPhoto img:hover{}
+
+.aboutBlog{
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-areas: "aboutBlogPhoto aboutBlogText";
+}
+
+.aboutBlogPhoto{
+  grid-area: aboutBlogPhoto;
+}
+
+.aboutBlogPhoto img{
+  margin-top: 25%;
+}
+
+.aboutBlogText{
+  grid-area: aboutBlogText;
+}
+
+.aboutRajTextHeading, .aboutBlogTextHeading{
+  font-size: 28px;
+}
+
+.aboutBorderBottom{
+  height: 1px;
+  border-top: 2px solid $brand_light;
+  max-width: 60px;
+  margin-bottom: 10px;
+}
+
+.aboutRajTextContent{
+  margin-right: 15px;
+}
+
+.aboutRajTextContent, .aboutBlogTextContent{
+  text-align: justify;
+}
+
+//STYLES FOR ABOUT BLOG SVG
+
+.AboutBlogSVG{
+  height: 250px;
+  max-width: 350px;
+  margin-top: 25%;
+  margin-right: 20px;
+  transition: all .25s ease-out;
+}
+
+#c72640af-2824-4ace-a782-4df73f48977c > path:nth-child(32),
+#c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(40),
+#c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(62),
+#c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(41),
+#c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(42),
+#c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(43),
+#c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(44),
+#c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(45),
+#c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(46),
+#c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(47),
+#c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(48),
+#c72640af-2824-4ace-a782-4df73f48977c > ellipse:nth-child(4),
+#c72640af-2824-4ace-a782-4df73f48977c > ellipse:nth-child(3),
+#c72640af-2824-4ace-a782-4df73f48977c > path:nth-child(165),
+#c72640af-2824-4ace-a782-4df73f48977c > path:nth-child(94),
+#c72640af-2824-4ace-a782-4df73f48977c > path:nth-child(89),
+#c72640af-2824-4ace-a782-4df73f48977c > path:nth-child(115),
+#c72640af-2824-4ace-a782-4df73f48977c > path:nth-child(90),
+#c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(39),
+#c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(134),
+#c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(126),
+#c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(35),
+#c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(132),
+#c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(124),
+#c72640af-2824-4ace-a782-4df73f48977c > path:nth-child(82),
+#c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(34),
+#c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(134),
+#c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(123),
+#c72640af-2824-4ace-a782-4df73f48977c > path:nth-child(82),
+#c72640af-2824-4ace-a782-4df73f48977c > path:nth-child(81),
+#c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(34),
+#c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(38),
+#c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(126),
+#c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(133),
+#c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(125),
+#c72640af-2824-4ace-a782-4df73f48977c > path:nth-child(90),
+#c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(39),
+#c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(131)
+{
+  transition: all .25s ease-out;
+}
+
+
+.dark #c72640af-2824-4ace-a782-4df73f48977c > path:nth-child(32),
+.dark #c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(40),
+.dark #c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(62),
+.dark #c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(41),
+.dark #c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(42),
+.dark #c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(43),
+.dark #c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(44),
+.dark #c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(45),
+.dark #c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(46),
+.dark #c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(47),
+.dark #c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(48),
+.dark #c72640af-2824-4ace-a782-4df73f48977c > ellipse:nth-child(4),
+.dark #c72640af-2824-4ace-a782-4df73f48977c > ellipse:nth-child(3){
+  fill: white;
+}
+
+.dark #c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(35),
+.dark #c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(132),
+.dark #c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(131),
+.dark #c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(124),
+.dark #c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(123),
+.dark #c72640af-2824-4ace-a782-4df73f48977c > path:nth-child(82),
+.dark #c72640af-2824-4ace-a782-4df73f48977c > path:nth-child(81),
+.dark #c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(34),
+.dark #c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(38){
+  fill: $svg_fill_dark;
+}
+
+.dark #c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(39),
+.dark #c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(134),
+.dark #c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(126),
+.dark #c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(133),
+.dark #c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(125){
+  fill: #0C171D
+}
+
+.dark #c72640af-2824-4ace-a782-4df73f48977c > path:nth-child(165),
+.dark #c72640af-2824-4ace-a782-4df73f48977c > path:nth-child(94),
+.dark #c72640af-2824-4ace-a782-4df73f48977c > path:nth-child(89),
+.dark #c72640af-2824-4ace-a782-4df73f48977c > path:nth-child(115),
+.dark #c72640af-2824-4ace-a782-4df73f48977c > path:nth-child(90),
+.dark #c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(39){
+  fill: $svg_color_dark;
+}
+
+.dark #c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(126),
+.dark #c72640af-2824-4ace-a782-4df73f48977c > rect:nth-child(134){
+  fill: $brand_light;
+}
+
+@media only screen and (max-width: 800px) {
+  .aboutRaj{
+    grid-template-columns: 1fr;
+    grid-template-areas:  "aboutRajPhoto"
+                          "aboutRajText";
+  }
+  .aboutPageContainer{
+    width: 100%;
+  }
+
+  .aboutRajPhoto{
+    text-align: center;
+  }
+
+  .aboutRajPhoto img{
+    max-width: 75%;
+    height: 77% !important;
+    margin-left: 12% !important;
+  }
+
+  .aboutRajText{
+    margin-right: 0;
+  }
+
+  .aboutBlog{
+    grid-template-columns: 1fr;
+    grid-template-areas:  "aboutBlogPhoto"
+                          "aboutBlogText";
+  }
+
+  .AboutBlogSVG{
+    margin-top: 5px;
+  }
+
+  .aboutBlogPhoto{
+    text-align: center;
+  }
+
+  .aboutBlogPhoto svg{
+    max-width: 100%;
+  }
+
+}

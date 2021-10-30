@@ -1,0 +1,243 @@
+@import "global";
+
+.homePageNav{
+  background: transparent;
+
+  a{
+    color: $txt_dark;
+  }
+
+  .svgIcon{
+    fill: white;
+  }
+}
+
+.dark .homePageNav {
+  background: transparent;
+}
+.dark .scrolled.homePageNav {
+  background: $navbarBg_dark;
+}
+
+.scrolled.homePageNav a, .scrolled.homePageNav .themeSwitcher{
+  color: $txt_light;
+}
+
+.dark .scrolled.homePageNav a, .dark .scrolled.homePageNav .themeSwitcher{
+  color: $txt_dark;
+}
+
+.scrolled.homePageNav .svgIcon{
+  fill: $txt_light;
+}
+
+.dark .scrolled.homePageNav .svgIcon{
+  fill: $txt_dark;
+}
+
+.homePageWrapper{
+  padding: 0 !important;
+}
+
+.homeBlogGrid{
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+}
+
+.homeBlogArchivesLinkMobile{
+  display: none;
+}
+
+.homeBlogHeadingBox{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 19px;
+}
+
+.homeBlogGridHeading{
+  font-size: 28px;
+}
+
+.homeBlogGridHeadingLine{
+  height: 1px;
+  border-top: 2px solid $brand_light;
+  max-width: 60px;
+  margin-bottom: 10px;
+}
+
+.wgrdn a{
+  font-size: 15px;
+  font-weight: bold;
+  color: #3355ff !important;
+}
+
+.homeBlogGridArchivesLine{
+  height: 1px;
+  border-top: 2px solid $brand_light;
+  max-width: 60px;
+  margin-bottom: 10px;
+  margin-left: 70%;
+}
+
+.homeBlogArchivesLink a, .dark .homeBlogArchivesLink a{
+  border-bottom: none;
+  background-size: 4px 0;
+}
+
+.homeBlogArchivesLink a:hover, .dark .homeBlogArchivesLink a:hover{
+  background-size: 4px 50px;
+}
+
+.homeBlogArchivesButton{
+  padding: 5px 10px;
+  border: 1px solid $brand_dark;
+  border-radius: 15px;
+
+  background: linear-gradient(
+                  to bottom, #3355ff40 0%,
+                  #3355ff40 100%
+  ) repeat-x 0 100%;
+  background-size: 4px 1px;
+  color: $txt_light;
+  text-decoration: none;
+  transition: all .25s;
+}
+
+.dark .homeBlogArchivesButton{
+  color: $txt_dark;
+}
+
+.homeBlogArchivesButton:hover {
+  background-size: 4px 50px;
+}
+
+.homeBlogBoxesCntnr{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.homeBlogBox{
+  max-width: 330px;
+  box-shadow:  -2px 3px 0 rgba(0, 0, 0, 0.1), 2px 3px 2px 0 rgba(0, 0, 0, 0.06);
+  transition: all 0.25s;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.dark .homeBlogBox{
+  box-shadow:  -2px 3px 0 rgba(255, 255, 255, 0.1), 2px 3px 2px 0 rgba(255, 255, 255, 0.06);
+}
+
+.homeBlogBox:hover{
+  box-shadow: 0 25px 50px -12px rgba(0,0,0,.25);
+
+  .homeBlogTitle{
+    color: $brand_light;
+  }
+
+  .homeBlogImage img{
+    filter: brightness(85%);
+    -webkit-filter: brightness(85%);
+    -moz-filter: brightness(85%);
+  }
+}
+
+.dark .homeBlogBox:hover{
+  box-shadow: 0 25px 50px -12px rgba(255,255,255,.25);
+}
+
+.homeBlogImage img{
+  transition: all 0.25s ease-out!important;
+}
+
+.homeBlogTitle{
+  text-align: center;
+  font-size: 27px;
+  font-family: $subHeadingFont;
+  font-weight: 600;
+  margin: auto;
+  transition: all 0.25s;
+  padding: 10px 0 20px 0;
+
+  h2{
+    line-height: 1.3;
+  }
+}
+
+.homeBlogDateTag{
+  font-size: 16px;
+  display: flex;
+  justify-content: space-evenly;
+  max-height: 25px;
+}
+
+.homeBlogIcon{
+  margin-right: 7px;
+}
+
+.dark .homeBlogTag svg{
+  fill: #ffffff;
+}
+
+.homeBlogDate, .homeBlogTag{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 15px;
+
+  svg{
+    margin: auto;
+    margin-right: 4px;
+  }
+
+  span{
+    margin: auto;
+  }
+}
+
+.homeBlogTag svg{
+  transition: all 0.25s !important;
+}
+
+.homeBlogExcerpt{
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.4;
+  padding: 20px 5px ;
+}
+
+@media only screen and (max-width: 800px) {
+  .homeBlogArchivesLink{
+    display: none;
+  }
+
+  .homepageHeroHi{
+    font-size: 44px;
+  }
+
+  .homeBlogArchivesLinkMobile{
+    display: flex;
+    justify-content: center;
+    background: $brand_dark;
+    padding: 4px;
+    border-radius: 11px;
+    margin: 20px 0;
+
+    i{
+      margin-right: 5px;
+      color: #C2CEDA;
+    }
+    a{
+      color: #ffffff;
+    }
+  }
+
+  .wgrdn{
+    float: right;
+  }
+
+}

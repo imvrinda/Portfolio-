@@ -1,0 +1,234 @@
+@import "global";
+
+.projectsWrapper{
+  background: #f1f1f1;
+  transition: all .25s ease;
+}
+
+.dark .projectsWrapper{
+  background: $bg_dark;
+}
+
+.ProjectsSVG{
+  height: 250px;
+  max-width: 500px;
+}
+
+.ProjectsSVG > g:nth-child(96) > use:nth-child(1),
+.ProjectsSVG > g:nth-child(101) > use:nth-child(1),
+.ProjectsSVG > g:nth-child(98) > use:nth-child(1),
+.ProjectsSVG > g:nth-child(97) > use:nth-child(1){
+  transition: all .25s ease-out;
+}
+
+.dark .ProjectsSVG > g:nth-child(96) > use:nth-child(1),
+.dark .ProjectsSVG > g:nth-child(98) > use:nth-child(1),
+.dark .ProjectsSVG > g:nth-child(97) > use:nth-child(1){
+  fill: $svg_color_dark;
+}
+
+.dark .ProjectsSVG > g:nth-child(101) > use:nth-child(1){
+  fill: #0C171D;
+}
+
+.ProjectsSVG > use:nth-child(4){
+  fill: #747E89;
+  transition: all .25s ease-out;
+}
+
+.dark .ProjectsSVG > use:nth-child(4){
+  fill: #0C171D;
+}
+
+.webdevtext{
+  font-family: $headingFont;
+  width: 85%;
+  margin: auto;
+  font-size: 25px;
+}
+
+.projectBox_container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.projectBox{
+  background: #ffffff;
+  width: 350px;
+  margin: 25px;
+  padding: 10px;
+  display: inline-flex;
+  flex-direction: column;
+  border: 1px solid #f5f5f5;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 0px 18px 6px rgba(245,245,245,1);
+  -moz-box-shadow: 0px 0px 18px 6px rgba(245,245,245,1);
+  box-shadow: 0px 0px 18px 6px rgba(245,245,245,1);
+  transition: all .25s ease;
+}
+
+.projectBox:hover{
+  -webkit-box-shadow: 0px 0px 14px 3px rgba(220,220,220,1);
+  -moz-box-shadow: 0px 0px 14px 3px rgba(220,220,220,1);
+  box-shadow: 0px 0px 14px 3px rgba(220,220,220,1);
+}
+
+.dark .projectBox{
+  background: #0000007a;
+  border: 1px solid #1f1f1f;
+  -webkit-box-shadow: 0px 0px 14px 3px rgba(18,18,18,1);
+  -moz-box-shadow: 0px 0px 14px 3px rgba(18,18,18,1);
+  box-shadow: 0px 0px 14px 3px rgba(18,18,18,1);
+}
+
+.dark .projectBox:hover{
+  -webkit-box-shadow: 0px 0px 14px 3px rgba(44,44,44,1);
+  -moz-box-shadow: 0px 0px 14px 3px rgba(44,44,44,1);
+  box-shadow: 0px 0px 14px 3px rgba(44,44,44,1);
+}
+
+.dark .projectLink{
+  border: 1px solid $brand_light;
+}
+
+.projectImage{
+  position: relative;
+  width: 100%;
+  height: auto;
+
+  img {
+    display: block;
+    width: 100%;
+    border-radius: 15px;
+    transition: all 0.25s ease-out;
+  }
+
+  .projectImageOverlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .projectImageIcon{
+    position: absolute;
+    color: #ffffff;
+    font-size: 50px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: all 0.25s ease-out;
+  }
+
+}
+
+.projectImage:hover{
+
+  img {
+    filter: brightness(69%);
+    -webkit-filter: brightness(69%);
+    -moz-filter: brightness(69%);
+  }
+  
+  i{
+    opacity: 0.75;
+    z-index: 2;
+  }
+  .projectImageIcon{
+    opacity: 90;
+  }
+}
+
+.projectTitle{
+  text-align: center;
+  font-size: 27px;
+  font-family: $subHeadingFont;
+  font-weight: $subHeadingFontWeight;
+  padding: 24px 0 14px 0;
+  line-height: 1.2;
+}
+
+.projectTitle:hover a{
+  color: #3355ff;
+}
+
+.projectSubtitle{
+  margin-top: -4px;
+  text-align: center;
+  font-size: 19px;
+  font-family: $subHeadingFont;
+  font-weight: $subHeadingFontWeight;
+}
+
+.projectLine{
+  margin: 13px auto 0 auto;
+  background: lightgray;
+  height: 2px;
+  width: 50%;
+}
+
+.dark .projectLine {
+  background: #304c6a;
+}
+
+.projectDescription{
+  text-align: center;
+  font-size: 16px;
+  margin: 15px auto;
+}
+
+.webdevDescription{
+  margin: 5px auto;
+}
+
+.projectLinks{
+  text-align: center;
+  margin: 3px 10px;
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+.projectLink{
+  display: inline-flex;
+  height: 50px;
+  width: 50px;
+  border: 1px solid #000;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 50px;
+  transition: all .25s ease-out;
+
+  i{
+    font-size: 35px;
+    margin:auto;
+  }
+}
+
+.projectLink:hover{
+  background: $brand_light;
+  color: #fff;
+}
+
+.projectTags{
+  font-weight: bold;
+  font-size: 15px;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 890px) {
+  .ProjectsSVG{
+    max-width: 100%;
+    height: 140px;
+  }
+  .projectBox{
+    margin: 25px auto;
+  }
+}

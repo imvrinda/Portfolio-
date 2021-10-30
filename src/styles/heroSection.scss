@@ -1,0 +1,56 @@
+@import "global";
+
+.heroSection{
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-areas: "titleSection svgSection";
+
+  background: $navbarBg_light;
+  padding: 10px 50px;
+  min-height: 35vh;
+}
+
+.titleSection{
+  grid-area:titleSection;
+}
+
+.svgSection{
+  grid-area:svgSection;
+}
+
+
+.dark .heroSection{
+  background: $navbarBg_dark;
+}
+
+.title{
+  font-family: $headingFont;
+  font-weight: $headingFontWeight;
+  font-size: 38px;
+  margin-top: 10vh;
+}
+
+.title h1{
+  display: inline;
+}
+
+.footerwave{
+  fill: $navbarBg_light;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .heroSection {
+    grid-template-columns: 1fr;
+    grid-template-areas: "titleSection"
+                          "svgSection";
+  }
+  .heroSVG{
+    max-width: 100% !important;
+    height: 140px !important;
+  }
+  .title{
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+  }
+}

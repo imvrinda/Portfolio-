@@ -1,0 +1,82 @@
+.prism-code{
+  text-shadow: none !important;
+}
+
+.gatsby-highlight {
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+  width: 80%;
+  margin: auto;
+}
+.gatsby-highlight pre[class*="language-"] {
+  -webkit-overflow-scrolling: touch;
+  padding: 1rem 0.75rem;
+  border-radius: 13px;
+}
+
+.gatsby-highlight pre[class*="language-"]::before {
+  background: black;
+  border-radius: 0 0 0.25rem 0.25rem;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 0.025rem;
+  padding: 0.1rem 0.5rem;
+  position: absolute;
+  right: 1rem;
+  text-align: right;
+  text-transform: uppercase;
+  top: 0;
+}
+.gatsby-highlight pre[class~="language-javascript"]::before {
+  content: "js";
+  background: #f7df1e;
+  color: black;
+}
+.gatsby-highlight pre[class~="language-js"]::before {
+  content: "js";
+  background: #f7df1e;
+  color: black;
+}
+
+.gatsby-highlight pre[class~="language-html"]::before {
+  content: "html";
+  background: #005a9c;
+  color: white;
+}
+
+.gatsby-highlight pre[class~="language-css"]::before {
+  content: "css";
+  background: #ff9800;
+  color: white;
+}
+
+.gatsby-highlight pre[class~="language-python"]::before {
+  content: "python";
+  background: #4B8BBE;
+  color: white;
+}
+
+.gatsby-highlight pre[class~="language-cpp"]::before {
+  content: "C++";
+  background: #202a76;
+  color: white;
+}
+
+.gatsby-highlight pre[class~="language-bash"]::before {
+  content: "bash";
+  background: green;
+  color: white;
+}
+
+.token.operator{
+  background: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .gatsby-highlight{
+    width: 100%;
+  }
+  .gatsby-highlight pre[class*="language-"]{
+    padding: 2rem 0.75rem;
+  }
+}

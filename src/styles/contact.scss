@@ -1,0 +1,277 @@
+@import "global";
+
+.ContactSVG{
+  height: 200px;
+  max-width: 400px;
+  transition: all .25s ease-out;
+}
+
+.ContactSVG:hover{
+  padding: 1px;
+}
+
+.dark #ae37f038-3a9e-4b82-ad68-fc94ba16af2a > g:nth-child(7) > path:nth-child(5),
+.dark #ae37f038-3a9e-4b82-ad68-fc94ba16af2a > g:nth-child(8) > path:nth-child(5),
+.dark #ae37f038-3a9e-4b82-ad68-fc94ba16af2a > path:nth-child(18),
+.dark #ae37f038-3a9e-4b82-ad68-fc94ba16af2a > g:nth-child(3) > path:nth-child(5),
+.dark #ae37f038-3a9e-4b82-ad68-fc94ba16af2a > g:nth-child(4) > path:nth-child(5),
+.dark #ae37f038-3a9e-4b82-ad68-fc94ba16af2a > g:nth-child(6) > path:nth-child(5),
+.dark #ae37f038-3a9e-4b82-ad68-fc94ba16af2a > g:nth-child(5) > path:nth-child(5),
+.dark #ae37f038-3a9e-4b82-ad68-fc94ba16af2a > path:nth-child(16),
+.dark #ae37f038-3a9e-4b82-ad68-fc94ba16af2a > path:nth-child(14),
+.dark #ae37f038-3a9e-4b82-ad68-fc94ba16af2a > g:nth-child(5) > path:nth-child(2),
+.dark #ae37f038-3a9e-4b82-ad68-fc94ba16af2a > g:nth-child(7) > path:nth-child(2),
+.dark #ae37f038-3a9e-4b82-ad68-fc94ba16af2a > g:nth-child(8) > path:nth-child(2),
+.dark #ae37f038-3a9e-4b82-ad68-fc94ba16af2a > g:nth-child(4) > path:nth-child(2),
+.dark #ae37f038-3a9e-4b82-ad68-fc94ba16af2a > g:nth-child(6) > path:nth-child(2),
+.dark #ae37f038-3a9e-4b82-ad68-fc94ba16af2a > ellipse:nth-child(9),
+.dark #ae37f038-3a9e-4b82-ad68-fc94ba16af2a > ellipse:nth-child(10),
+.dark #ae37f038-3a9e-4b82-ad68-fc94ba16af2a > ellipse:nth-child(11),
+.dark #ae37f038-3a9e-4b82-ad68-fc94ba16af2a > ellipse:nth-child(12){
+  fill: white;
+}
+
+#ae37f038-3a9e-4b82-ad68-fc94ba16af2a > circle:nth-child(49),
+#ae37f038-3a9e-4b82-ad68-fc94ba16af2a > circle:nth-child(53),
+#ae37f038-3a9e-4b82-ad68-fc94ba16af2a > circle:nth-child(46){
+  transition: all .25s ease-out;
+  fill: #c7d3de;
+}
+
+.dark #ae37f038-3a9e-4b82-ad68-fc94ba16af2a > circle:nth-child(49),
+.dark #ae37f038-3a9e-4b82-ad68-fc94ba16af2a > circle:nth-child(53),
+.dark #ae37f038-3a9e-4b82-ad68-fc94ba16af2a > circle:nth-child(46){
+  fill: #2a3f52;
+}
+
+#ae37f038-3a9e-4b82-ad68-fc94ba16af2a > path:nth-child(113),
+#ae37f038-3a9e-4b82-ad68-fc94ba16af2a > path:nth-child(103),
+#ae37f038-3a9e-4b82-ad68-fc94ba16af2a > path:nth-child(117),
+#ae37f038-3a9e-4b82-ad68-fc94ba16af2a > path:nth-child(107),
+#ae37f038-3a9e-4b82-ad68-fc94ba16af2a > path:nth-child(104){
+  transition: all .25s ease-out;
+}
+
+.dark #ae37f038-3a9e-4b82-ad68-fc94ba16af2a > path:nth-child(113),
+.dark #ae37f038-3a9e-4b82-ad68-fc94ba16af2a > path:nth-child(103),
+.dark #ae37f038-3a9e-4b82-ad68-fc94ba16af2a > path:nth-child(117),
+.dark #ae37f038-3a9e-4b82-ad68-fc94ba16af2a > path:nth-child(107),
+.dark #ae37f038-3a9e-4b82-ad68-fc94ba16af2a > path:nth-child(104){
+  fill: $svg_color_dark;
+}
+
+.contactCntnr{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contactDetailsCntnr{
+  display: flex;
+  align-content: flex-start;
+
+  h2{
+    margin: 20px 30px 15px 30px;
+    font-family: $headingFont;
+    font-size: 23px;
+    font-weight: bold;
+  }
+}
+
+.contactDetails{
+  flex-basis: 400px;
+  height: 290px;
+  display: block;
+  border: 1px solid $brand_light;
+  border-radius: 15px;
+  margin: 0 auto;
+  box-shadow: 0 0 2em rgba(0,0,0,0.125);
+  transition: all .25s ease-out;
+
+  p{margin-top: 15px; font-family: 'Nunito', sans-serif;text-align: center;font-size: 30px;font-weight: 400;}
+}
+
+.contactDetails:hover{
+  box-shadow: 0 0 2.5em rgba(0,0,0,0.125);
+}
+
+.contactDetails ul{
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.contactDetails ul li{
+  transition: all .25s ease-out;
+  padding: 5px 30px;
+  margin-bottom: 0;
+  font-size:17px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.contactDetails ul li:hover{
+  background: rgba(0,0,0,0.09);
+}
+
+.dark .contactDetails ul li:hover{
+  background: rgba(255,255,255,0.09);
+}
+
+.contactDetails ul li a{
+  text-decoration: none;
+}
+
+.contactIcon{
+  margin-right: 25px;
+
+  i{
+    color: #1A2977;
+    transition: all .25s ease-out;
+  }
+}
+
+.dark .contactIcon{
+  i{
+    color: rgba(255,255,255,0.9);
+  }
+}
+
+.contactFormCntnr, .contactDetailsCntnr{
+  padding: 50px 20px;
+  margin: 0 50px;
+}
+
+.contactForm {
+  font-size: 20px;
+  border-radius: 8px;
+  padding: 0 20px 20px;
+  width: 500px;
+  box-sizing: border-box;
+  border: 1px solid #3355ff;
+  box-shadow: 0 0 2em rgba(0,0,0,0.125);
+
+  h2{
+    margin-top: 28px;
+    font-family: $headingFont;
+    font-size: 23px;
+    font-weight: bold;
+  }
+
+  p:before {
+    content: attr(type);
+    display: block;
+    margin: 28px 0 0;
+    font-size: 17px;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    transition: all .3s;
+    border-bottom: 2px solid rgba(51, 85, 255, 0.3);
+    font-size: 15px;
+  }
+
+  input:focus, textarea:focus {
+    border-bottom: 2px solid #3355ff;
+    background: rgba(0,0,0,0.03);
+  }
+
+  button {
+    padding: 8px 12px;
+    border: 1px solid #3355ff;
+    background: #3355ff;
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s;
+  }
+
+  button:hover {
+    transform: scale(1.05);
+  }
+
+  .submitBtnCntnr{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  #successMessage, #errorMessage{
+    display: none;
+    font-size: 19px;
+  }
+}
+
+.dark .contactForm {
+  color: $txt_dark;
+
+  button{
+    color: #ffffff;
+  }
+  input, textarea{
+    caret-color: white;
+  }
+}
+
+#spinner:not([hidden]) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#spinner::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border: 2px solid rgb(161, 161, 161);
+  border-top: 3px solid #3355ff;
+  border-radius: 100%;
+  will-change: transform;
+  animation: spin 1s infinite linear
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .contactDetails{
+    margin: 30px auto;
+    width: 100%;
+    height: 320px;
+    ul{
+      margin-left: 0;
+    }
+    p{
+      font-size: 28px;
+      margin-bottom: 15px !important;
+    }
+  }
+  .contactFormCntnr, .contactDetailsCntnr{
+    padding: 0;
+    margin: 20px auto 0;
+  }
+  .contactFormCntnr, .contactForm{
+    max-width: 100%;
+  }
+  .contactDetailsCntnr{
+    width: 500px;
+  }
+  .contactDetails{
+    height: 287px;
+    margin: 0;
+  }
+  #successMessage, #errorMessage{
+    font-size: 16px;
+  }
+}
